@@ -1,0 +1,43 @@
+abstract class Addition{
+abstract void add();
+public void sub()
+{
+System.out.println("Subraction");
+}
+}
+
+
+abstract class ImplementedMethod extends Addition{
+abstract void division();
+public void multipy()
+{
+System.out.println("Multiplication");
+}
+}
+
+class adding extends Addition{
+	void add() {
+		System.out.println("Addition......");
+	}
+}
+class dividing extends Addition{
+	void division() {
+		System.out.println("Division......");
+	}
+
+	@Override
+	void add() {
+		System.out.println("Addition......");
+		
+	}
+}
+
+
+class AbstractExample {
+public static void main(String[] args) {
+	
+	adding a1 = new adding();
+	dividing a2 = new dividing();
+	
+}
+}
