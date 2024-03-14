@@ -1,0 +1,48 @@
+
+public class array {
+
+	public static void main(String[] args) {
+		int[] arr = new int[11];
+		int index = 0;
+		for (int i=10;i<=20;i++) {
+			arr[index]=i;
+			index++;
+		}
+		
+	//Even numbers
+		System.out.println("Even: ");
+	for(int j=0;j<arr.length;j++){
+		if(arr[j]%2==0) {
+			if(j==arr.length-1 || j == arr.length-2 ) {
+				System.out.print(arr[j]);
+			}
+			else {
+				System.out.print(arr[j]+",");
+			}
+	  }
+	}
+	
+	
+	//Odd numbers
+	System.out.println("\nOdd: ");
+	for(int k =0;k<arr.length;k++){
+		if(arr[k]%2!=0) {
+			if(k==arr.length-1 || k == arr.length-2 ) {
+				System.out.print(arr[k]);
+			}
+			else {
+				System.out.print(arr[k]+",");
+			}
+	  }
+	}
+	
+	
+	
+	}
+	
+}
+
+//you will be given a range of numbers, your task is to print the odd and even numbers, separately
+//10 - 20
+//11,13,15,17,19
+//10,12,14,16,18,20
